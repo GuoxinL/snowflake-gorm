@@ -4,7 +4,7 @@
 // SPDX-License-Identifier: Apache-2.0
 //
 
-// Package route example
+// Package gorm 节点id分配器 工具测试
 package gorm
 
 import (

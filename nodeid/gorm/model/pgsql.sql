@@ -3,7 +3,7 @@ create table snowflake_kv
 (
     key     text                     not null
         primary key,
-    node_id bigserial,
+    node_id bigint,
     time    bigint                   not null,
     created timestamp with time zone not null,
     updated timestamp with time zone not null

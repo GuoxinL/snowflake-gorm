@@ -23,17 +23,6 @@ import (
 var _ snowflake.TimeSynchronizer = new(TimeSynchronizer)
 var _ snowflake.NodeIdAllocator = new(NodeIdAllocator)
 
-type (
-	Value struct {
-		NodeId int64 `json:"node_id"`
-	}
-	Config struct {
-		Port int `json:","`
-		//
-		TimeRollbackThreshold time.Duration `json:"time_rollback_threshold"`
-	}
-)
-
 // NodeIdAllocator gorm节点ID分配器
 type NodeIdAllocator struct {
 	ctx context.Context
