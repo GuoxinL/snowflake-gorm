@@ -94,7 +94,7 @@ create table snowflake_kv
 (
     `key`   varchar(191) not null comment 'Key'
         primary key,
-    node_id bigint auto_increment comment 'Node ID',
+    node_id bigint       not null comment 'Node ID',
     time    bigint       not null comment 'time',
     created datetime(3)  not null comment '创建时间',
     updated datetime(3)  not null comment '更新时间',
@@ -110,7 +110,7 @@ create table snowflake_kv
 (
     key     text                     not null
         primary key,
-    node_id bigserial,
+    node_id bigint					 not null,
     time    bigint                   not null,
     created timestamp with time zone not null,
     updated timestamp with time zone not null
